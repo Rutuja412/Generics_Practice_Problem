@@ -17,7 +17,7 @@ namespace Generics
             GenericMaximum<double> doublegeneric = new GenericMaximum<double>(doubleArray);
             doublegeneric.PrintMaxValue();
 
-            string[] stringArray = { "22", "33", "44","55","66" };
+            string[] stringArray = { "Apple", "Banana", "Peach","Pineapple" };
             GenericMaximum<string> stringgeneric= new GenericMaximum<string>(stringArray);
             stringgeneric.PrintMaxValue();
         }   
