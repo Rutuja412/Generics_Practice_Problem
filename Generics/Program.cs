@@ -7,10 +7,10 @@ namespace Generics
         static void Main(string[] args)
         {
             Console.WriteLine("-----Generics------");
-            Console.WriteLine("Maximun string   is :");
-            // Console.WriteLine(MaximumNumberCheck.MaximumIntegerNumber(100, 200, 300));
-            //Console.WriteLine(MaximumNumberCheck.MaximumFloatNumber(1.11, 2.22, 4.44));
-            Console.WriteLine(MaximumNumberCheck.MaximumStringNumber("Apple", "Peach", "Banana"));
+            Console.WriteLine("Maximum Integer,float and string is :");
+             Console.WriteLine(MaximumNumberCheck.Maximum(100, 200, 300));
+            Console.WriteLine(MaximumNumberCheck.Maximum(1.11, 2.22, 4.44));
+            Console.WriteLine(MaximumNumberCheck.Maximum("Apple", "Peach", "Banana"));
         }
     }
 }
