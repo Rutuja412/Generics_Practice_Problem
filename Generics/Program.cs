@@ -8,9 +8,18 @@ namespace Generics
         {
             Console.WriteLine("-----Generics------");
             Console.WriteLine("Maximum Integer,float and string is :");
-            Console.WriteLine(MaximumNumberCheck<int>.Maximum(100, 200, 300));
-            Console.WriteLine(MaximumNumberCheck<float>.Maximum(1.11f, 2.22f, 4.44f));
-            Console.WriteLine(MaximumNumberCheck<string>.Maximum("Apple", "Peach", "Banana"));
+           
+             int[] intArray = { 1, 2, 4,5,6 };
+            GenericMaximum<int> generic = new GenericMaximum<int>(intArray);
+            generic.PrintMaxValue();
+
+            double[] doubleArray = { 1.11, 2.22, 4.44,7.77,8.88 };
+            GenericMaximum<double> doublegeneric = new GenericMaximum<double>(doubleArray);
+            doublegeneric.PrintMaxValue();
+
+            string[] stringArray = { "22", "33", "44","55","66" };
+            GenericMaximum<string> stringgeneric= new GenericMaximum<string>(stringArray);
+            stringgeneric.PrintMaxValue();
         }   
     }
 }
