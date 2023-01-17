@@ -4,9 +4,16 @@ using System.Text;
 
 namespace Generics
 {
-    public class MaximumNumberCheck
+    public class MaximumNumberCheck<T> where T : IComparable
     {
-        public static T Maximum<T>(T firstValue, T secondValue, T thirdValue) where T : IComparable
+        public T firstValue, secondValue, thirdValue;
+        public MaximumNumberCheck(T firstValue, T secondValue, T thirdValue)
+        {
+            this.firstValue = firstValue;
+            this.secondValue = secondValue;
+            this.thirdValue = thirdValue;
+        }
+        public static T Maximum(T firstValue, T secondValue, T thirdValue)
         {
             if (firstValue.CompareTo(secondValue) > 0 && firstValue.CompareTo(thirdValue) > 0)
             {
